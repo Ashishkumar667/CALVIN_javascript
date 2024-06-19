@@ -55,7 +55,7 @@
   width: 40vw;
   height: 50px;
   border-radius: 20px;
-  background: rgba(248, 0, 0, 0.705);
+  background: rgba(252, 1, 1, 0.792);
 }
 
 .main .input .talk {
@@ -80,4 +80,28 @@
   color: #aed0d0;
   font-size: 15px;
   margin-right: 20px;
+}
+footer{
+  justify-content: center;
+  display: flex;
+   text-shadow:1px 0.3px 0 #000000;
+   background-color: rgb(251, 255, 0);
+   color: rgb(2, 57, 117);
+   font-size: 110%;
+}
+button.Ashish{
+  justify-content: left;
+  color: rgb(1, 0, 3);
+  background-color: rgb(4, 255, 0);
+  font-size: 110%;
+  border-radius: 12px 12px ;
+  cursor: pointer;
+  text-shadow: 1px 0.3px 0 rgb(1, 83, 246);
+}
+.photos{
+  justify-content: center;
+  display: flex;
+  background-color: rgba(134, 128, 124, 0.6);
+  text-shadow: 2px 1px 0 rgb(255, 255, 255);
+  
 }
