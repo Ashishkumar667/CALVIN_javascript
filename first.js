@@ -67,27 +67,40 @@ function takeCommand(message){
         speak('hello sir, How may I help you?')
     }
     
-    if (message.includes('open Google')){
+    if (message.includes(' Google.com')){
         window.open("https://google.com","_blank");
         speak("Opening google")
     }
-    if (message.includes('open Youtube')){
+    if (message.includes(' Youtube.com')){
         window.open("https://Youtube.com","_blank");
         speak("Opening youtube")
     }
-    if (message.includes('open amazon')){
+    if (message.includes('amazon.com')){
         window.open("https://amazon.com","_blank");
         speak("Opening amazon")
     }
-    if (message.includes('open flipkart')){
+    if (message.includes('flipkart.com')){
         window.open("https://flipkart.com","_blank");
         speak("Opening flipkart")
     }
-    if (message.includes('open cardekho')){
+    if (message.includes('open cardekho.com')){
         window.open("https://Cardekho.com","_blank");
         speak("Opening CarDekho")
     }
-    
+    else if (message.includes("where do you live")){
+        const finalvoiceofcalvin ="  I live in your heart";
+        speak(finalvoiceofcalvin);
+    }
+    else if (message.includes("what's your name")){
+        const finalvoiceofcalvin =" my name is calvin";
+        speak(finalvoiceofcalvin);
+    }
+
+    else if (message.includes("who made you")){
+        const finalvoiceofcalvin ="  My owner name is Aashish Mishra";
+        speak(finalvoiceofcalvin);
+    }
+
 
    else if(message.includes('What is') || message.includes('who is') || message.includes('What are')){
     window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
@@ -114,34 +127,34 @@ function takeCommand(message){
     speak(finalvoiceofcalvin);
    }
 
-  else if (message.includes('Setting')){
-    window.open('Setting:///')
-    const finalvoiceofcalvin ="Opening Setting"
+  else if (message.includes('open spotify')){
+    window.open('https://open.spotify.com/')
+    const finalvoiceofcalvin =" sure Opening spotify"
     speak(finalvoiceofcalvin);
   }
 
-  else if (message.includes('calender')){
-    window.open('calender:///')
+  else if (message.includes('calendar' )){
+    window.open('https://www.timeanddate.com/calendar/')
     const finalvoiceofcalvin ="Opening calender"
     speak(finalvoiceofcalvin);
   }
-else if(message.includes('calvin who made you?')) {
-    speak('Ashish mishra has made me');
+  else if (message.includes('calculator')){
+    window.open('https://www.calculator.net/')
+    const finalvoiceofcalvin ="opening calculator"
+    speak(finalvoiceofcalvin);
+  }
+
+else if(message.include( 'thank you')){
+    const finalvoiceofcalvin="Welcome I am very glad to have you Visit again";
+    speak(finalvoiceofcalvin);
 }
 
- else if(message.include('calvin, tell me a joke in hindi')){
-   speak(' एक चुटकुला आ रहा है! समुद्री राक्षस का पसंदीदा नाश्ता क्या है?' + 'उत्तर है जहाज़ और डुबकी hehehe..')
- }
- else if(message.include('calvin, tell me a joke')){
-    speak(' What falls, but never needs a bandage?'+' answer is The rain.');
-  }
-else if(message.include('Calvin,Where do you live')){
-    speak('I live in your heart');
-}
+
   else{
     window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank")
     const finalvoiceofcalvin ="Information that I found For " + message + "On google";
     speak(finalvoiceofcalvin);
   }
+  
   
 }
