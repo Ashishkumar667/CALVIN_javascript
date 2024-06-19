@@ -85,14 +85,14 @@ footer{
   justify-content: center;
   display: flex;
    text-shadow:1px 0.3px 0 #000000;
-   background-color: rgb(251, 255, 0);
+   background-color: rgb(207, 207, 166);
    color: rgb(2, 57, 117);
    font-size: 110%;
 }
 button.Ashish{
   justify-content: left;
-  color: rgb(1, 0, 3);
-  background-color: rgb(4, 255, 0);
+  color: rgb(2, 15, 0);
+  background-color: rgb(214, 138, 210);
   font-size: 110%;
   border-radius: 12px 12px ;
   cursor: pointer;
@@ -103,5 +103,5 @@ button.Ashish{
   display: flex;
   background-color: rgba(134, 128, 124, 0.6);
   text-shadow: 2px 1px 0 rgb(255, 255, 255);
-  
+  border-radius: 12px 12px;
 }
