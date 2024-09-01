@@ -67,11 +67,11 @@ function takeCommand(message){
         speak('hello sir, How may I help you?')
     }
     
-    if (message.includes(' Google.com')){
+    if (message.includes(' google.com')){
         window.open("https://google.com","_blank");
         speak("Opening google")
     }
-    if (message.includes(' Youtube.com')){
+    if (message.includes(' youtube.com')){
         window.open("https://Youtube.com","_blank");
         speak("Opening youtube")
     }
@@ -102,7 +102,7 @@ function takeCommand(message){
     }
 
 
-   else if(message.includes('What is') || message.includes('who is') || message.includes('What are')){
+   else if(message.includes('what is') || message.includes('who is') || message.includes('what are')){
     window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
     const finalvoiceofcalvin ="This is what I found on the intrnet for you" + message;
     speak(finalvoiceofcalvin);
@@ -145,7 +145,7 @@ function takeCommand(message){
   }
 
 else if(message.include( 'thank you')){
-    const finalvoiceofcalvin="Welcome I am very glad to have you Visit again";
+    const finalvoiceofcalvin="Welcome, I am very glad to have you, Visit again";
     speak(finalvoiceofcalvin);
 }
 
